@@ -1,0 +1,7 @@
+# Runtime dependencies for the YouTube Transcript Extractor.
+#
+# youtube-transcript-api is pinned below 1.0 because this app uses the
+# class-level `YouTubeTranscriptApi.get_transcript()` helper, which was
+# replaced by the instance-based `fetch()`/`list()` API in 1.0.
+Flask>=3.0,<4
+youtube-transcript-api>=0.6,<1.0
